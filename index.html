@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        #main{
+            /* height: 100%; */
+            min-height: 100vh;
+            width: 100%;
+            background-color: azure;
+        }
+        #top{
+            /* height: 65%; */
+            min-height: 65vh;
+            width: 100%;
+            position: relative;
+            /* background-color: rgb(119, 114, 114); */
+            background-image: url(https://plus.unsplash.com/premium_photo-1661404168171-0922b76bbdae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+            background-size: cover;
+            background-position: bottom;
+        }
+        #overlay{
+            width: 100%;
+            /* height: 100%; */
+            min-height: inherit;
+            position: absolute;
+            background-color: rgba(119, 103, 103, 0.689);
+        }
+        #text{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            padding: 0% 10vw;
+            /* background-color: rgb(59, 68, 65); */
+        }
+        #text h1{
+            font-size: 6vw;
+        }
+        #textright{
+            width: 60%;
+            display: flex;
+
+            justify-content: space-between;
+            /* background-color: aqua; */
+        }
+        #textright p{
+            font-size: 1.5vw;
+            width: 40%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+
+        }
+        #textright i{
+            color: rgb(209, 211, 211);
+        }
+        #bootum{
+            /* height: 35%; */
+            min-height: 35vh;
+            width: 100%;
+            display: flex;
+            background-color: aqua;
+        }
+        #bone{
+            /* height: 100%; */
+            min-height: inherit;
+            width: 25%;
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 40px;
+            font-size: larger;
+            font-style: oblique;
+            background-color: rgb(165, 165, 165);
+        }
+        #btwo{
+            /* height: 100%; */
+            min-height: inherit;
+            width: 25%;
+            /* background-color: rgb(84, 70, 70); */
+            background-image: url(https://images.unsplash.com/photo-1671726203388-1ea3259b8ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+            background-size: cover;
+            background-position: 7%;
+        }
+        #overlaybtwo{
+            /* height: 100%; */
+            min-height: inherit;
+            width: 100%;
+            padding: 50px;
+            font-size: larger;
+            color: rgb(25, 17, 17);
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: oblique;
+            /* text-decoration: blue; */
+            background-color: rgba(56, 50, 50, 0.582);
+        }
+        #bthree{
+            /* height: 100%; */
+            min-height: inherit;
+            width: 25%;
+            background-color: rgb(17, 133, 17);
+        }
+        #bthreetop{
+            height: 50%;
+            width: 100%;
+            padding: 10%;
+            color: rgb(199, 195, 188);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: medium;
+            background-color: rgb(187, 86, 43);
+        }
+        #bthreebottom{
+            height: 50%;
+            width: 100%;
+            /* background-color: rgb(172, 58, 58); */
+            background-image: url(https://images.unsplash.com/photo-1633118948215-480c9d78fc24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80);
+            background-size: cover;
+            position: relative;
+            background-position: 10%;
+        }    
+        #overlay3{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(31, 28, 28, 0.612);
+        }
+        #bfour{
+            /* height: 100%; */
+            min-height: inherit;
+            width: 25%;
+            padding: 20px;
+            justify-content: space-between;
+            background-color: #444;
+            /* font-size: 16px; */
+        }       
+        .notf{
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+            /* background-color: antiquewhite; */
+            justify-content: space-between;
+            /* margin-top: 20px; */
+
+        }
+        .notf #photo{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* background-color: aliceblue; */
+            background-image: url(https://images.unsplash.com/photo-1673648955074-dfc7f0b41bfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+            background-size: cover;
+        }
+        .notf p{
+            width: 86%;
+            color: rgb(108, 118, 128);           
+            font-size: 14px;
+        }
+        @media(max-width: 500px){
+            #overlay #text{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #overlay #text #textright{
+                flex-direction: column;
+                align-items: flex-start;
+
+            }
+            #overlay #text #textright p{
+                width: initial;
+                margin-top: 20px;
+            }
+            #overlay #text #textright #icon{
+                margin-top: 30px;
+            }
+        }
+                       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <div id="overlay">
+                <div id="text">
+                    <h1>Noise.</h1>               
+                <div id="textright">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum sunt dolor illum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo distinctio magni aspernatur quis!</p>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-messenger-line"></i>
+                </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id="bootum">
+            <div id="bone">
+                <h1>LATEST</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veniam!</p>
+            </div>
+            <div id="btwo">
+                <div id="overlaybtwo">
+                    <h1>THINK BIG <b>
+                        TO DO BIG
+                    </b></h1>
+                </div>
+            </div>
+            <div id="bthree">
+                <div id="bthreetop">
+                    <h4>ALERT</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
+                </div>
+                <div id="bthreebottom">
+                    <div id="overlay3">
+                    </div>
+                </div>
+            </div>
+            <div id="bfour">
+                <h4>LATEST</h4>
+                <div class="notf">
+                    <div id="photo"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ex officia quasi!</p>
+                </div>
+               
+                <div class="notf">
+                    <div id="photo"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ex officia quasi!</p>
+                </div>
+                <div class="notf">
+                    <div id="photo"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ex officia quasi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

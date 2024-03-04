@@ -1,0 +1,86 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #212121;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#modal{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(29, 196, 233);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.6s;
+    box-shadow: 0 0 30px 0 rgba(8, 125, 215, 0.993), 0 0 100px 0 rgb(4, 174, 236);
+}
+span{
+    position: absolute;
+    color: aqua;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#btn{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 0%;
+    right: 0%;
+}
+#arrowtop{
+    font-size: 100px;
+    color: rgb(84, 211, 211);
+    cursor: pointer;
+}
+#arrowleft{
+    font-size: 100px;
+    color: rgb(84, 211, 211);
+    cursor: pointer;
+}#arrowright{
+    font-size: 100px;
+    color: rgb(84, 211, 211);
+    cursor: pointer;
+}#arrowbottom{
+    font-size: 100px;
+    color: rgb(84, 211, 211);
+    cursor: pointer;
+}
+#top,#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#middle{
+    display: flex;
+    justify-content: space-between;
+}
+#btnColorChange{
+    padding: 10px;
+    background-color: rgb(50, 52, 53);
+    border: 0px;
+    font-weight: 900;
+    color: rgb(105, 194, 194);
+    cursor: pointer;
+}
+#colorChangeDiv{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
